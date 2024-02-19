@@ -1,0 +1,44 @@
+.footer{
+    padding:0 3%;
+    padding-bottom: 40px;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+
+    .footer-up{
+        margin-bottom: 50px;
+        display: flex;
+        .footer-left{
+            width: 50%;
+            .text{
+                margin-top: 20px;
+                max-width: 450px;
+            }
+            .contact{
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+        .footer-right{
+            margin-top: 50px;
+            width: 50%;
+            .title{
+                text-align: center;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .location{
+                display: flex;
+                margin-top: 20px;
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.order {
+    padding: 20px 3%;
+
+    .order-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .order-table {
+        img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .title {
+            font-weight: 600;
+        }
+
+        .price {
+            color: red;
+            font-weight: 600;
+
+            .priceOld {
+                text-decoration: line-through;
+                color: rgba(0, 0, 0, 0.70);
+                font-weight: 500;
+                margin-right: 20px;
+            }
+        }
+
+        .number {
+            font-size: 18px;
+
+            button {
+                border: unset;
+                background: none;
+                outline: unset;
+                margin: 0 10px;
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+        }
+
+        .button-delete {
+            background-color: red;
+            border: unset;
+            color: white;
+            padding: 5px 10px;
+
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.5);
+            }
+        }
+    }
+    .total{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        div:first-child{
+            margin-right: 8%;
+        }
+        div:nth-child(2){
+            color: red;
+            font-weight: 600;
+            margin-right: 30px;
+        }
+
+    }
+}

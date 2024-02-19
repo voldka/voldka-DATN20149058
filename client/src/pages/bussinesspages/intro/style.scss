@@ -1,0 +1,117 @@
+.intro {
+  padding: 20px 3%;
+
+  .banner {
+    display: flex;
+    background-color: #ffb6ec;
+    color: white;
+    height: 325px;
+    margin-bottom: 10px;
+
+    .logo {
+      width: 49%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 500;
+
+      span {
+        font-size: 96px;
+      }
+    }
+
+    .slogan {
+      width: 51%;
+      display: flex;
+      align-items: center;
+      font-size: 35px;
+      font-weight: 500;
+
+      > div {
+        border-left: 3px solid white;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+
+      > div {
+        max-width: 580px;
+
+        .title {
+          font-size: 40px;
+          font-weight: 600;
+        }
+
+        > div {
+          padding-bottom: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .right {
+      img {
+        width: 570px;
+        height: 720px;
+      }
+    }
+  }
+
+  .line {
+    position: relative;
+
+    hr {
+      height: 2px;
+      border: unset;
+      background-color: #a3a3a3;
+    }
+
+    .circle {
+      position: absolute;
+      top: -10px;
+      left: 49%;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #a3a3a3;
+    }
+  }
+
+  .purpose {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      .title {
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      > div {
+        max-width: 580px;
+      }
+    }
+  }
+  .member {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+  }
+}

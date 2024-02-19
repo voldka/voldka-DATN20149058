@@ -1,0 +1,45 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff2f2;
+  height: 100%;
+  background: url('https://en.idei.club/uploads/posts/2023-06/1685615068_en-idei-club-p-handmade-background-dizain-pinterest-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .register-title {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    .title {
+      text-align: center;
+      width: 50%;
+      margin: 0;
+      cursor: pointer;
+      background-color: rgb(219, 219, 219);
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .active {
+      background-color: #74abfa;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  .register-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    .register-form {
+      padding: 0 20px;
+    }
+  }
+}

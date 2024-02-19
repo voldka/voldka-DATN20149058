@@ -1,0 +1,54 @@
+.store {
+  padding: 20px 3%;
+
+  .banner {
+    img {
+      width: 100%;
+      height: 470px;
+    }
+  }
+
+  .line-category {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    column-gap: 40px;
+
+    div {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .store-body {
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    max-width: 1320px;
+    min-height: 700px;
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 10px 0;
+  }
+
+  .grid-sale {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 0 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

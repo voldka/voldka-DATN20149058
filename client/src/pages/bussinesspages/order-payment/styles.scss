@@ -1,0 +1,11 @@
+.checkout-option {
+  span {
+    display: inline-block;
+  }
+}
+
+.checkout-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

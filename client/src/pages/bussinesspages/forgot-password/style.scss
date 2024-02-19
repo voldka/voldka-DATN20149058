@@ -1,0 +1,56 @@
+.forgot-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff2f2;
+  height: 100%;
+  background: url('https://en.idei.club/uploads/posts/2023-06/1685615068_en-idei-club-p-handmade-background-dizain-pinterest-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .forgot-password-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    .title {
+      text-align: center;
+      margin: 0;
+      cursor: pointer;
+      background-color: #74abfa;
+      padding: 20px;
+      font-size: 20px;
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    .active {
+      background-color: #74abfa;
+      color: #fff;
+
+      font-weight: 600;
+    }
+  }
+
+  .forgot-password-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+
+    .forgot-password-form {
+      padding: 0 20px;
+    }
+  }
+
+  .forgot {
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    &:hover {
+      color: #74abfa;
+    }
+  }
+}

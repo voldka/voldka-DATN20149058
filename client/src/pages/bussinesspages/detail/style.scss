@@ -1,0 +1,23 @@
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 8px 0;
+
+  span {
+    font-size: 18px;
+    text-transform: capitalize;
+
+    &:first-child {
+      font-weight: 600 !important;
+    }
+  }
+}
+
+.list-relevant-products {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}

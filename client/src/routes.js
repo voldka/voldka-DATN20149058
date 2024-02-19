@@ -1,26 +1,26 @@
 import { lazy } from "react";
 
-import Home from "./pages/Home";
-import Profile from "./pages/Profile";
-import Post from "./pages/Post";
-import OwnPost from "./pages/OwnPost";
-import CommunityHome from "./pages/CommunityHome";
-import Saved from "./pages/Saved";
-import PublicProfile from "./pages/PublicProfile";
-import AllCommunities from "./pages/AllCommunities";
-import MyCommunities from "./pages/MyCommunities";
-import Following from "./pages/Following";
-import SignUp from "./pages/SignUp";
+import Home from "./pages/communitypages/Home";
+import Profile from "./pages/communitypages/Profile";
+import Post from "./pages/communitypages/Post";
+import OwnPost from "./pages/communitypages/OwnPost";
+import CommunityHome from "./pages/communitypages/CommunityHome";
+import Saved from "./pages/communitypages/Saved";
+import PublicProfile from "./pages/communitypages/PublicProfile";
+import AllCommunities from "./pages/communitypages/AllCommunities";
+import MyCommunities from "./pages/communitypages/MyCommunities";
+import Following from "./pages/communitypages/Following";
+import SignUp from "./pages/communitypages/SignUp";
 
-const ReportedPost = lazy(() => import("./pages/ReportedPost"));
-const Moderator = lazy(() => import("./pages/Moderator"));
-const DevicesLocations = lazy(() => import("./pages/DevicesLocations"));
-const VerifyEmail = lazy(() => import("./pages/VerifyEmail"));
-const EmailVerifiedMessage = lazy(() => import("./pages/EmailVerifiedMessage"));
-const BlockDevice = lazy(() => import("./pages/BlockDevice"));
-const LoginVerified = lazy(() => import("./pages/LoginVerified"));
-const AccessDenied = lazy(() => import("./pages/AccessDenied"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const ReportedPost = lazy(() => import("./pages/communitypages/ReportedPost"));
+const Moderator = lazy(() => import("./pages/communitypages/Moderator"));
+const DevicesLocations = lazy(() => import("./pages/communitypages/DevicesLocations"));
+const VerifyEmail = lazy(() => import("./pages/communitypages/VerifyEmail"));
+const EmailVerifiedMessage = lazy(() => import("./pages/communitypages/EmailVerifiedMessage"));
+const BlockDevice = lazy(() => import("./pages/communitypages/BlockDevice"));
+const LoginVerified = lazy(() => import("./pages/communitypages/LoginVerified"));
+const AccessDenied = lazy(() => import("./pages/communitypages/AccessDenied"));
+const NotFound = lazy(() => import("./pages/communitypages/NotFound"));
 
 export const privateRoutes = [
   {

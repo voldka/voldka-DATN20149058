@@ -14,10 +14,10 @@ import FallbackLoading from "./components/loader/FallbackLoading";
 import { publicRoutes, privateRoutes } from "./routes";
 
 import PrivateRoute from "./PrivateRoute";
-import SignIn from "./pages/SignIn";
+import SignIn from "./pages/communitypages/SignIn";
 
-const AdminPanel = lazy(() => import("./pages/AdminPanel"));
-const AdminSignIn = lazy(() => import("./pages/AdminSignIn"));
+const AdminPanel = lazy(() => import("./pages/communitypages/AdminPanel"));
+const AdminSignIn = lazy(() => import("./pages/communitypages/AdminSignIn"));
 
 const App = () => {
   const userData = useSelector((state) => state.auth?.userData);

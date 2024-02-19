@@ -1,0 +1,25 @@
+.item-member{
+    font-size: 24px;
+    width: 460px;
+    .id{
+        font-weight: 600;
+        text-align: center;
+    }
+    hr{
+        margin: 5px 0 20px 0;
+    }
+    .info{
+        text-align: center;
+        margin: 20px 0;
+        div:first-child{
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    }
+    .contact{
+        font-weight: 500;
+        span{
+        font-weight: 400;
+        }
+    }
+}
