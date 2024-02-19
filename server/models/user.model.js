@@ -13,6 +13,8 @@ const userSchema = new Schema(
       unique: true,
       trim: true,
     },
+
+    phone: { type: String },
     password: {
       type: String,
       required: true,
@@ -32,28 +34,27 @@ const userSchema = new Schema(
         ref: "User",
       },
     ],
-
     location: {
       type: String,
       default: "",
     },
+    address: { type: String },
+    city: { type: String },
 
     bio: {
       type: String,
       default: "",
     },
-
     interests: {
       type: String,
       default: "",
     },
-
+    isAdmin: { type: Boolean, default: false, required: true },
     role: {
       type: String,
       enum: ["general", "moderator", "admin"],
       default: "general",
     },
-
     savedPosts: [
       {
         type: Schema.Types.ObjectId,
@@ -61,7 +62,6 @@ const userSchema = new Schema(
         default: [],
       },
     ],
-
     isEmailVerified: {
       type: Boolean,
       default: false,
