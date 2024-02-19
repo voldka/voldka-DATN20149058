@@ -17,7 +17,8 @@ const contextAuthRoutes = require("./routes/context-auth.route");
 const search = require("./controllers/search.controller");
 const Database = require("./config/database");
 const decodeToken = require("./middlewares/auth/decodeToken");
-
+const cookieParser = require('cookie-parser');
+const path = require('path');
 const app = express();
 
 const cors = require("cors");
@@ -44,6 +45,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(passport.initialize());
 require("./config/passport.js");
@@ -52,13 +54,23 @@ app.get("/server-status", (req, res) => {
   res.status(200).json({ message: "Server is up and running!" });
 });
 
+app.use(express.static(path.resolve(__dirname, 'public')));
 app.get("/search", decodeToken, search);
-
 app.use("/auth", contextAuthRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 app.use("/communities", communityRoutes);
 app.use("/admin", adminRoutes);
+// app.use('/api/user', require('./routes/UserRouter'));
+app.use('/api/product', require('./routes/ProductRouter'));
+app.use('/api/order', require('./routes/OrderRouter'));
+app.use('/api/payment', require('./routes/PaymentRouter'));
+app.use('/api/carousels', require('./routes/CarouselRouter'));
+app.use('/api/comment', require('./routes/CommentProductRouter'));
+app.use('/api/product-types', require('./routes/ProductTypeRouter'));
+// app.use('/api/promotions', require('./routes/PromotionsRouter'));
+app.use('/api/cart', require('./routes/CartRouter'));
+app.use('/api/statistic', require('./routes/StatisticRouter'));
 
 process.on("SIGINT", async () => {
   try {
